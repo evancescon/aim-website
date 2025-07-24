@@ -304,6 +304,47 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Executive Committee */
+.exec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.exec-member {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.exec-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.exec-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.exec-member h3 {
+  margin: 0.5rem 0 0.25rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+.exec-member .position {
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+.exec-member .bio {
+  font-size: 0.9rem;
+  color: var(--dark-bg);
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   nav .nav-links {
