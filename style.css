@@ -306,12 +306,14 @@ footer {
 
 /* Executive Committee */
 .exec-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
 }
 .exec-member {
+  flex: 1 1 280px; /* cards will be ~280px wide but shrink/grow responsively */
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
